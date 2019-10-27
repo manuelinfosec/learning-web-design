@@ -80,23 +80,35 @@
 
                 <fieldset>
                     <legend>Number</legend>
+                    <label for="date">Input delivery date: </label>
+                    <input type="date" name="date" id="11">
 
                     <label for="pizza-no">How many pizzas: </label>
-                    <input type="number" name="number" id="11"><br>
+                    <input type="number" name="number" id="11" min="1" max="6"><br>
+
+                    <label for="rating">Satisfaction (0 to 10):
+                    <input type="range" name="slider" id="12" min="0" max="10" step="1"></label>
                 </fieldset>
 
                 <fieldset>
                     <legend>Shipping</legend>
                     <label for="deliverer">Select a delivery gender: </label>
-
+                    
                     <select id="gender">
-                        <option>Male</option>
-                        <option>Female</option>
-                        <option>Anyone should work</option>
+                        <optgroup label="genders">
+                            <option selected>Male</option>
+                            <option selected>Female</option>
+                        </optgroup>
+                        <optgroup label="Non-genders">
+                            <option>Anyone should work</option>
+                        </optgroup>
                     </select>
                 </fieldset>
             </fieldset>
-
+            <br>
+            <label>Send a photo to be used as an identification icon <em>optional: </em>
+            <input type="file" name="photo"></label>
+            
             <p><input type="submit" name="submit" value="Bring me a pizza!"> <input type="reset" name="reset" value="Reset"></p>
         </form>
     </body>
