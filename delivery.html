@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta description="Pizza-on-Demand Delivery page">
+        <title>Pizza-on-Demand Delivery</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Black Goose Bistro | Pizza-on-Demand</h1>
+        </header>
+        <p>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza nd we'll deliver it within an hour.</p>
+
+        <form method="post" action="http://blackgoosebistro.com/pizza.php">
+            <fieldset>
+                <legend>Your Information</legend>
+                
+                <label for="name">Name: </label>
+                <input type="text" name="customername" class="form-name"><br>
+
+                <label for="address">Address: </label>
+                <input type="text" name="address" class="form-address"><br>
+
+                <label for="tel">Telephone Number: </label>
+                <input type="tel" name="telephone" class="form-tel"> <br>
+
+                <label for="email">Email: </label>
+                <input type="email" name="email" class="form-email"><br>
+
+                <label for="information">Delivery instructions: </label><br>
+                <textarea cols="45" rows="4" name="instructions" placeholder="No more than 400 characters long" maxlength="400"></textarea>
+            </fieldset>
+            
+            <h2>Design Your Dream Pizza:</h2>
+            
+            <fieldset>
+                <legend>Pizza specs</legend>
+
+                <fieldset>
+                    <legend>Crust (Choose one): </legend>
+                    
+                    <input type="radio" name="classic-white" id="0">
+                    <label for="classic-white">Classic White</label><br>
+
+                    <input type="radio" name="multigrain" id="1">
+                    <label for="multigrain">Multigrain</label><br>
+
+                    <input type="radio" name="cheese-stuffed" id="2">
+                    <label for="cheese-stuffed">Cheese Stuffed</label><br>
+
+                    <input type="radio" name="glutten-free" id="3">
+                    <label for="glutten-free">Glutten Free</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Toppings (Choose as many as you want): </legend>
+                    
+                    <input type="checkbox" name="red-sauce" id="4" checked>
+                    <label for="red-sauce">Red Sauce</label><br>
+
+                    <input type="checkbox" name="white-sauce" id="5">
+                    <label for="white-sauce">White Sauce</label><br>
+
+                    <input type="checkbox" name="mozzarella-cheese" id="6">
+                    <label for="mozzarella-cheese">Mozzarella Chesse</label><br>
+
+                    <input type="checkbox" name="pepperoni" id="7">
+                    <label for="pepperoni">Pepperoni</label><br>
+
+                    <input type="checkbox" name="mushrooms" id="8">
+                    <label for="mushrooms">Mushrooms</label><br>
+
+                    <input type="checkbox" name="peppers" id="9">
+                    <label for="peppers">Peppers</label><br>
+
+                    <input type="checkbox" name="anchovies" id="10">
+                    <label for="anchovies">Anchovies</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Number</legend>
+
+                    <label for="pizza-no">How many pizzas: </label>
+                    <input type="number" name="pizza-no" id="11"><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Shipping</legend>
+                    <label for="deliverer">Select a delivery gender: </label>
+
+                    <select id="gender">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Anyone should work</option>
+                    </select>
+                </fieldset>
+            </fieldset>
+
+            <input type="submit" name="submit" value="Bring me a pizza!">
+            <input type="reset" name="reset" value="Reset">
+        </form>
+    </body>
+</html>

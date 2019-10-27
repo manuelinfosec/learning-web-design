@@ -1,0 +1,25 @@
+body {
+	margin: 1 10%;
+	font-family:  sans-serif;
+}
+
+.posted-by {
+	margin-top: -1.5%;
+}
+
+.price {
+	font-weight: bold;
+}
+
+h1 {
+	display: block;
+	align-items: center;
+	text-align: center;
+	font-family: serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	border-bottom: 3px solid #57b1dc;
+	margin-top:  30px;
+}
+
+

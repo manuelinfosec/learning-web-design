@@ -1,0 +1,24 @@
+body {
+    font-weight: normal;
+}
+
+nav {
+    position: relative;
+}
+
+nav.foot {
+    text-align: center;
+    display: block;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+div.intro {
+	background-color: azure;
+	text-align: center;
+	display: block;
+	justify-content: center;
+	align-items: center;
+}
